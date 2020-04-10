@@ -1,4 +1,5 @@
 import { User } from "./User";
+import { Company } from "./Company";
 
 export class CustomMap {
   // マップをプライベートのプロパティとする
@@ -14,7 +15,7 @@ export class CustomMap {
     });
   }
 
-  addUserMarker(mappable: User) {
+  addMarker(mappable: User | Company) {
     new google.maps.Marker({
       map: this.googleMap,
       position: {
