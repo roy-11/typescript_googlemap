@@ -1,8 +1,11 @@
+const markerIcons = require("./markerIcons");
+
 export interface Mappable {
   location: {
     lat: number;
     lng: number;
   };
+  icon: string;
   markerContent();
 }
 
@@ -28,6 +31,7 @@ export class CustomMap {
         lat: mappable.location.lat,
         lng: mappable.location.lng,
       },
+      icon: { url: markerIcons[mappable.icon] },
     });
 
     // マーカーのポップアップ

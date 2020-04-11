@@ -6,6 +6,5 @@ const googlemapScript = document.createElement("script");
 googlemapScript.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.GOOGLEMAP_KEY}`;
 
 // googlemapのscriptタグを追加
-const mainScript = document.getElementById("main_script");
-document.body.insertBefore(googlemapScript, mainScript);
-console.log(document.body);
+const mapDiv = document.getElementById("map");
+document.body.insertBefore(googlemapScript, mapDiv.nextSibling);
