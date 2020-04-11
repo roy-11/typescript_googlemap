@@ -1,13 +1,14 @@
 # 概要
 
 これは、TypeScript を使用して Googlemap 上にユーザーと企業のフェイクデータをマッピングするサンプルプロジェクトです。  
-このプロジェクトは、以下のようなトピックを包含しています。
+このプロジェクトは、以下のようなトピックを包含しています。  
+[デプロイ URL](https://agitated-ramanujan-6ed3fe.netlify.com/)
 
 - カスタムクラスによる Googlemaps のメソッドのプライベート化
 - インターフェースによるクラスのプロパティ及びメソッドのチェック
 - 利用ライブラリ：parcel, dotenv, faker
 
-## 使用方法
+## ローカル環境での使用方法
 
 1. 利用ライブラリのインポート
 
@@ -23,7 +24,7 @@ touch .env
 ```
 
 ```bash
-# .env file
+# add GoogleMap API key in .env file
 GOOGLEMAP_KEY=
 ```
 
@@ -32,4 +33,11 @@ GOOGLEMAP_KEY=
 ```bash
 # project's root directory
 npm start
+```
+
+## ビルド
+
+```bash
+# project's root directory
+npm run build
 ```
