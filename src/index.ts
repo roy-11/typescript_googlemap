@@ -9,5 +9,6 @@ window.onload = function () {
   // マーカーを追加
   customMap.addMarker(new User());
   customMap.addMarker(new User());
+  customMap.addMarker(new User());
   customMap.addMarker(new Company());
 };

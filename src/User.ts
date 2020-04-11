@@ -7,6 +7,7 @@ export class User implements Mappable {
     lat: number;
     lng: number;
   };
+  avator: string;
   icon: string;
 
   constructor() {
@@ -15,10 +16,14 @@ export class User implements Mappable {
       lat: parseFloat(faker.address.latitude()),
       lng: parseFloat(faker.address.longitude()),
     };
+    this.avator = faker.image.avatar();
     this.icon = "user";
   }
 
   markerContent(): string {
-    return `User Name : ${this.name}`;
+    return `
+    <img src="${this.avator}" alt="avator">
+    <h3>User Name : ${this.name}</h3>
+    `;
   }
 }
