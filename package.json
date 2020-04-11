@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "start": "parcel ./src/index.ts",
+    "start": "parcel index.html",
     "prebuild": "npm install",
-    "build": "parcel build ./src/index.ts"
+    "build": "parcel build index.html"
   },
   "devDependencies": {
     "typescript": "^3.8.3"
